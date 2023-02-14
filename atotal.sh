@@ -7,7 +7,7 @@ while true; do
     if [[ $ciudad_actual == $ciudad ]]; then
       consumo_total=$((consumo_total + consumo_actual))
     fi
-  done < archivo.txt
+  done < consumos.txt
 
   if [[ $consumo_total -eq 0 ]]; then
     echo "La ciudad introducida no es válida, inténtelo de nuevo."
